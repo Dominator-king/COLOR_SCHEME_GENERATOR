@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+main {
+box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
+
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.header {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+#selectColor{
+     -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0.5px solid #D1D5DB;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+form> select{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #D1D5DB;
+    flex-basis: 45%
+}
+
+#button {
+border-radius: 4px;
+border: 1px solid var(--gray-300, #D1D5DB);
+background: var(--white, #FFF);
+
+/* shadow/sm */
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.colors > *{
+    margin: 0; 
+  width: 100%;
+}
+
+.colors> img{
+    max-height: 500px;
+    min-height: 300px;
+}
+
+.colors> div {
+    padding: 20px
+}
